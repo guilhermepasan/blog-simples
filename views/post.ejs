@@ -19,6 +19,10 @@
             <%= post.content %>
         </p>
 
+        <form action="/posts/<%= id %>/delete" method="POST" class="post-actions-form">
+            <button type="button" onclick="window.location.href='/posts/<%= id %>/edit'">Edit Post</button>
+            <button type="submit">Delete Post</button>
+        </form>
     </body>
 
     <%- include('partials/footer') %>
